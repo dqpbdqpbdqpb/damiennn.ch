@@ -1,0 +1,10 @@
+body{
+    background-color: #000000; 
+    }
+a{
+    cursor: pointer;
+}
+::selection{
+    background: #7ad3a5;
+    color: #000000;
+}
