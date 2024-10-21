@@ -5,6 +5,18 @@ a{
     cursor: pointer;
 }
 ::selection{
-    background: #7ad3a5;
-    color: #000000;
+    background:#7ad3a5;
+    color:#000000;
+}
+.links p a:link{
+    color:#7ad3a5;
+}
+.link p a:visited{
+    color:#9b73f1;
+}
+.link p a:hover{
+    filter: invert(1) !important;
+}
+.link p a:active{
+    filter: invert(1) !important;
 }
