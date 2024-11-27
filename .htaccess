@@ -1,0 +1,4 @@
+ErrorDocument 404 /404.html
+Order Allow,Deny
+Deny from 24.251.241.183
+Allow from all
