@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damien</title>
+    <link rel="stylesheet" href="../../mainstyle.css">
+    <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+
+    <h1 style="font-size: 50px;">equable regular polygon formula</h1>
+    <div style="font-size: 35px;">
+        for any regular polygon <i>P</i> with side length <i>s</i> and side count <i>n</i>, the side length <i>s</i> necessary such that its perimeter <i>P<sub>P</sub></i> and area <i>A<sub>P</sub></i> are numerically equivalent may be found using the formula:<br><br>
+        $s = 4\tan{\frac{\pi}{n}}$<br><br>
+        which is derived from the following:<br><br>
+        $\mathbb{{D}}:\mathbb{R}\setminus\mathbb{Z}^-$<br>
+        $F=\{P\}$<br>
+        $\exists{P}\;:\;A_P=P_P$<br>
+        $H=\{P\mid{A_P=P_P}\}$<br>
+        $\forall{P}\in{F}\;:\;\exists{a=\frac{s\cot\frac{\pi}{n}}{2}}$<br>
+        $\forall{P}\in{F}\;:\;\exists{A_P=\frac{ans}{2}}$<br>
+        $\therefore\;A_P=\frac{ns^2\frac{\cot\frac{\pi}{n}}{2}}{2}$<br>
+        $\therefore\;A_P=\frac{ns^2\cot\frac{\pi}{n}}{4}$<br>
+        $\forall{P}\;:\;\exists{P_P=ns}$<br>
+        $P\in{H}\iff{A_P=P_P}$<br>
+        $\therefore\;P\in{H}\Longrightarrow{\frac{ns^2\cot\frac{\pi}{n}}{4}=ns}$<br>
+        $\frac{s^2\cot\frac{\pi}{n}}{4}=s$<br>
+        $\frac{\cot\frac{\pi}{n}}{4}=\frac{s}{s^2}$<br>
+        $\frac{\cot\frac{\pi}{n}}{4}=\frac{1}{s}$<br>
+        $\frac{4}{\cot\frac{\pi}{n}}=s$<br>
+        $4\tan\frac{\pi}{n}=s$<br>
+        $\Box$
+    </div>
+    
+</body>
+
+</html>
