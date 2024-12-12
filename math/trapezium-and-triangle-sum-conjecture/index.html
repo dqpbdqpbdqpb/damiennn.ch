@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damien</title>
+    <link rel="stylesheet" href="../../mainstyle.css">
+    <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+
+    <h1 style="font-size: 50px;">trapezium and triangle sum conjecture</h1>
+    <div style="font-size: 35px;">
+        let there exist an isosceles triangle <i>t</i> with side length <i>x</i> and height <i>h</i>. a trapezium <i>T</i> may be constructed within the triangle with a major base <I>x</I>, a minor base <i>a</i>, and height <i>h<sub>1</sub></i>. a formula may be derived to get a height <i>h<sub>n</sub></i> to make a trapezium within <i>t</i> that occupies an <i>m</i> factor of the area <i>A<sub>t</sub></i>.<br><br>
+        $\cot\theta=\frac{h_1}{\frac{x}{n}}$<br>
+        $\therefore\;\frac{x\cot\theta}{n}=h_1$<br>
+        $\underline{\mathrm{let:}}\;a_1+a_2=\frac{x}{2}$<br>
+        $\tan\theta=\frac{a_1}{\frac{h_1}{2}}$<br>
+        $\therefore\;\frac{h_1\tan\theta}{2}=a_1$<br>
+        $\therefore\;\frac{x\cot\theta\tan\theta}{n^2}=a_1$<br>
+        $\therefore\;\frac{x}{n^2}=a_1$<br>
+        $\cot\theta=\frac{a_2}{h_1}$<br>
+        $\therefore\;h_1\cot\theta=a_2$<br>
+        $\therefore\;\frac{x\cot\theta\cot\theta}{n}=a_2$<br>
+        $\therefore\;\frac{x\cot^2\theta}{n}=a_2$<br>
+        $\underline{\mathrm{let:}}\;A_1=h_1a_1$<br>
+        $\therefore\;A_1=\frac{x\cot\theta}{n}(\frac{x}{n^2})$<br>
+        $\therefore\;A_1=\frac{x^2\cot\theta}{n^3}<br>
+        $\underline{\mathrm{let:}}\;A_2=\frac{h_1a_2}{2}$<br>
+        $\therefore\;A_2=\frac{{(\frac{x\cot\theta}{n})(\frac{x\cot^2\theta}{n})}}{2}<br>
+        $\therefore\;A_2=\frac{x^2\cot^3\theta}{2n^2}$<br>
+        $A_T=2A_1+2A_2$<br>
+        $A_T=2(\frac{x^2\cot\theta}{n^3})+2(\frac{x^2\cot^3\theta}{2n^2})$<br>
+        $A_T=x^2(\frac{2\cot\theta}{n^3}+\frac{\cot^3\theta}{n^2})$<br>
+        $A_T=x^2(\frac{2\cot\theta}{n^3}+\frac{n\cot^3\theta}{n^3})$<br>
+        $A_T=x^2(\frac{2\cot\theta+n\cot^3\theta}{n^3})$<br>
+        $A_T=\frac{x^2(2\cot\theta+n\cot^3\theta)}{n^3}$<br>
+        $A_t=\displaystyle\left[\sum_{n=1}^{m-1}nA_T\right]+\displaystyle\frac{x^2\sec\theta}{m}<br>
+        $\therefore\;\underline{A_t=\displaystyle\left[\sum_{n=1}^{m-1}\frac{x^2(2\cot\theta+n\cot^3\theta)}{n^2}\right]+\displaystyle\frac{x^2\sec\theta}{m}}$<br>
+        $\Box$
+    </div>
+    <h2 style="font-size: 25px"><u>11 december 2024 @ 21:38</u></h2>
+    
+</body>
+
+</html>
