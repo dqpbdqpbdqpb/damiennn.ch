@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damien</title>
+    <link rel="stylesheet" href="../../mainstyle.css">
+    <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+
+    <h1 style="font-size: 50px;">ring R</h1>
+    <div style="font-size: 35px;">
+        let $R$ be a ring with $a,b,c,d\in{R}$, $\bar{d}\subset{R}\land\bar{\mathbb{Z}}\subseteq{R}$, and operations $\oplus$ and $\otimes$,<br><br>
+        $\mathbb{Z\equiv\bar{\mathbb{Z}}}$<br>
+        $a\equiv{b}\equiv{c}$<br>
+        $a\oplus{a}=a\oplus{a}\;,\;\forall{a,b}\in{R}$<br>
+        $a\oplus{b}=b\oplus{a}\;,\;\forall{a,b}\in{R}$<br>
+        $a\oplus{b\oplus{c}}=c\oplus(a\oplus{b})\;,\;\forall{a,b,c}\in{R}$<br>
+        $a\otimes{a}=a\otimes{a}\;,\;a\in{R}$<br>
+        $a\otimes{b}\neq{b}\otimes{a}\;,\;\forall{a,b}\in{R}\mid{a\neq{b}}$<br>
+        $a\otimes(b\otimes{c})\neq(a\otimes{b})\oplus(a\otimes{c})\;,\;\forall{a,b,c}\in{R}\mid{a\neq{b}\neq{c}}$<br>
+        $\exists{a}^{-1}\mida\otimes{a}^{-1}=1\;,\;\forall{a}\in{R}\mid{a,a^{-1}}\neq0$<br>
+        $\bar{d}=\{d\in{\bar{\mathbb{Z}}}\mid{a}\otimes{d}=d\otimes{a}\;,\;\forall{a}\in{R}\}$<br>
+        $\therefore\;a\stackrel{\scriptscriptstyle\mathrm{def}}{=}\left[\begin{eqnarray} 
+        a_{11}&&&a_{12}&&&\cdots&&&a_n \\
+        a_{21}&&&a_{22}&&&\vdots&&&\vdots \\
+        \vdots&&&\vdots&&&\ddots&&&\vdots \\
+        a_m&&&a_{m2}&&&\cdots&&&a_{\infty}
+        \end{eqnarray}\right]$<br><br>
+        let $\Box{ABCD}$ exist,<br><br>
+        $\forall{\Box{ABCD}}\;(a)\mid!\exists({P_{\Box{ABCD}}}\land{A}_{\Box{ABCD}})}$<br>
+        $P_{\Box{ABCD}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}(4\otimes{a})\lor(a\otimes4)\;,\;(\bar{AB}\cong\bar{BC},\bar{CD},\bar{DA})\land(\bar{AB}=a)$<br>
+        $A_{\Box{ABCD}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}a\otimes{a}\;,\;(\bar{AB}\cong\bar{BC},\bar{CD},\bar{DA})\land(\bar{AB}=a)$<br><br>
+        let $\Box{EFGH}$ exist,<br><br>
+        $\forall\Box{EFGH}\;(a,b\mid\bar{EF}=a\mid\bar{FG}=b\mid{a\neq{b}})\mid!\exists{P_{\Box{EFGH}}}\land\exists{A}_{\Box{EFGH}}}$<br>
+        $P_{\Box{EFGH}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}[(2\otimes{a})\lor(a\otimes2)]\oplus[(2\otimes{b})\lor(b\otimes2)]\;,\;(\bar{EF}\cong\bar{GH})\land(\bar{FG}\cong{HF})$<br>
+        $A_{\Box{EFGH}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}(a\otimes{b})\land(b\otimes{a})\;,\;(\bar{EF}\cong\bar{GH})\land(\bar{FG}\cong{HF})$<br>
+        $\displaystyle\frac{\delta}{\delta{a}}A_{\Box{EFGH}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}a\otimes{b}$<br>
+        $\therefore\;\displaystyle\frac{\delta}{\delta{a}}X\stackrel{\scriptscriptstyle\mathrm{def}}{=}a\otimes{b}$<br>
+        $\displaystyle\frac{\delta}{\delta{b}}A_{\Box{EFGH}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}b\otimes{a}$<br>
+        $\therefore\;\displaystyle\frac{\delta}{\delta{b}}X\stackrel{\scriptscriptstyle\mathrm{def}}{=}b\otimes{a}$<br><br>
+        let $\odot{A}$ exist,<br><br>
+        $\cdot{A},\cdot{B},\cdot{C}\;\mathrm{are collinear on}\odot{A}$<br>
+        $\forall{\odot{A}}\;(a\mid{a}=\bar{BC}\otimes2^{-1})\mid!\exists({P_{\odot{A}}}\land{A_{\odot{A}}})$<br>
+        $P_{\odot{A}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}2\otimes\pi\otimes{a}$<br>
+        $\pi\stackrel{\scriptscriptstyle\mathrm{def}}{=}P_{\odot{A}}\otimes2^{-1}\otimes{a^{-1}}$<br>
+        $A_{\odot{A}}\stackrel{\scriptscriptstyle\mathrm{def}}{=}\pi\otimes{a}\otimes{a}$<br><br>
+        this is interesting as, within ring $R$, at least squares, rectangles, and circles only have one possible perimeter, however rectangles have two simultaneous areas depending on how multiplication within the ring is carried out. it is therefore my conjecture that:<br><br>
+        an equation within ring $R$ has $n!$ solutions, where $n$ represents the amount of variables being multiplied such that no variable is within the set $\bar{d}$ and such that no variable is equal to each other
+    </div>
+    <h2 style="font-size: 25px"><u>13 december 2024 @ 17:56</u></h2>
+    
+</body>
+
+</html>
