@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damien</title>
+    <link rel="stylesheet" href="../../mainstyle.css">
+    <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+
+    <h1 style="font-size: 50px;">ring R - first degree polynomials</h1>
+    <div style="font-size: 35px;">
+        polynomials within $R$ will be discussed<br><br>
+        $\mathbb{{D}}:R$<br>
+        a degree one polynomial can be defined as:<br><br>
+        $\displaystyle\frac{\delta}{\delta{a,x}}y=
+        \left(\begin{eqnarray} 
+        a \\
+        x \\
+        \end{eqnarray}\right)
+        \oplus{b}$<br><br>
+        where:<br><br>
+        $\{a,x\mid{a,x}\neq0\}\land\{b\mid(b\in{\bar{\mathbb{Z}}})\lor{b}\in\bar{d}\}$<br><br>
+        the solutions to a degree one polynomial are found when $y=0$, so there are a few distinct solutions. in the case that $a$ is a scalar and $x$ is not, or the converse, then there is only one solution as multiplication would then be commutative. if both are not scalars, however, then there are two unique solutions as multiplication would then not be commutative. it can therefore be stated that:<br><br>
+        $(!\exists{x}\mid{\left(\begin{eqnarray} 
+        a \\
+        x \\
+        \end{eqnarray}\right)\oplus{b}=0})\iff{a}\underline{\lor}x\in\bar{d}$<br>
+        $(\exists_2{x}\mid{        \left(\begin{eqnarray} 
+        a \\
+        x \\
+        \end{eqnarray}\right)\oplus{b}=0})\iff{a\neq{x}}\;,\;a,x\notin\bar{d}$<br><br>
+        for example, let the following function exist:<br><br>
+        $5=\left(\begin{eqnarray} 
+        2 \\
+        x \\
+        \end{eqnarray}\right)\oplus{1}$<br><br>
+        the way to properly solve for $x$ would be the following:<br><br>
+        $\begin{eqnarray}
+        \frac{\delta}{\delta2}5=2x\oplus1 &&&&&  ,&&&&& \frac{\delta}{\delta{x}}5=x2\oplus1 \\
+        \frac{\delta}{\delta2}4=2x &&&&& , &&&&& \frac{\delta}{\delta{x}}4=x2 \\
+        \frac{\delta}{\delta2}4\otimes{2^{-1}}=x &&&&& , &&&&& \frac{\delta}{\delta{x}}4\otimes{2^{-1}}=x \\
+        2=x &&&&& , &&&&& 2=x \\
+        \end{eqnarray}$<br><br>
+        this shows how, no matter if multiplied with respect to $2$ or $x$, there is only one valid solution for $x$. consider the following function where $a\notin\bar{d}$, however :<br><br>
+        $\begin{eqnarray}
+        \frac{\delta}{\delta{a}}5=ax\oplus1 &&&&&  ,&&&&& \frac{\delta}{\delta{x}}5=xa\oplus1 \\
+        \frac{\delta}{\delta{a}}4=ax &&&&& , &&&&& \frac{\delta}{\delta{x}}4=xa \\
+        4x^{-1}=a &&&&& , &&&&& 4a^{-1}=x \\
+        \end{eqnarray}$<br><br>
+        there are now two solutions to this degree one function, with this being the most simplified that its solutions may become. because we have new equations for $a$ and $x$ now, we can check if they make sense via substitution:<br><br>
+        $\begin{eqnarray}
+        4x^{-1}=a &&&&& , &&&&& 4a^{-1}=x \\
+        4(4a^{-1})^{-1}=a &&&&& , &&&&& 4(4x^{-1})^{-1}=x \\
+        4\otimes4^{-1}a=a &&&&& , &&&&& 4\otimes4^{-1}x=x \\
+        a=a &&&&& , &&&&& x=x
+        \end{eqnarray}$<br><br>
+        which reveals very fun properties about ring $R$ in terms of first degree polynomials
+    </div>
+    <h2 style="font-size: 25px"><u>14 december 2024 @ 17:33</u></h2>
+    
+</body>
+
+</html>
