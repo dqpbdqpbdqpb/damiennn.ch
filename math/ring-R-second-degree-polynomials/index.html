@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>damien</title>
+    <link rel="stylesheet" href="../../mainstyle.css">
+    <script type="text/javascript" src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+
+    <h1 style="font-size: 50px;">ring R - second degree polynomials</h1>
+    <div style="font-size: 35px;">
+        polynomials within $R$ will be discussed<br><br>
+        $\mathbb{{D}}:R$<br><br>
+        a degree two polynomial can be defined as:<br><br>
+        $\displaystyle\frac{\delta}{\delta{a,b,x}}y=
+        \left(\begin{eqnarray} 
+        a \\
+        x^2 \\
+        \end{eqnarray}\right)
+        \oplus
+        \left(\begin{eqnarray} 
+        b \\
+        x \\
+        \end{eqnarray}\right)
+        \oplus{c}$<br><br>
+        where:<br><br>
+        $\{a,x\mid{a,x}\neq0\}\land\{c\mid(c\in{\bar{\mathbb{Z}}})\lor{c}\in\bar{d}\}$<br><br>
+        the same conditions that apply to the amount of solutions for a <a href="../ring-R-first-degree-polynomials/index.html">linear function</a> also apply to a quadratic, however there are now two $x$-terms, meaning that the amount of solutions are now $2(n!)$, so there should be four solutions<br>
+        to have a consistent way to find the solutions, however, a quadratic formula that's compatible with $R$ must be found. however, because multiplication is not communtative and because the process of deriving the quadratic formula requires a far amount of multiplication, new notation shall be made to make it so there aren't an exorbitant amount of formulae. this notation is the following:<br><br>
+        $[x]^{\dot{\Box}{n}_m}$ or $[x]$<br><br>
+        which shows that, for a number $x$, it may be multiplied by another number $n$ $m$ different ways that would result in a different product and that any of these combinations may happen without regard for any other, but with a connection to any other term with the same symbol in place of $\dot{\Box}$. the more simplified notation with just square brackets is used when there is no added multiplicand, but the multipliers themselves may be multiplied in various different ways. a subscript may be added, but the combinations may generally be inferred. this is done to condense clutter as much as possible. this notation should not be mistaken for representing a matrix<br>
+        knowing this, the quadratic formulae may be derived as follows:<br><br>
+        $\displaystyle\frac{\delta}{\delta{a,b,x}}0=
+        \left(\begin{eqnarray} 
+        a \\
+        x^2 \\
+        \end{eqnarray}\right)
+        \oplus
+        \left(\begin{eqnarray} 
+        b \\
+        x \\
+        \end{eqnarray}\right)
+        \oplus{c}$<br>
+        $\displaystyle\frac{\delta}{\delta{x}}0=x^2a\oplus{x}b\oplus{c}$<br>
+        $\displaystyle\frac{\delta}{\delta{x}}0=[x^2a]^{a_1^{{-1}}}\oplus[xb]^{a_3^{{-1}}}\oplus[c]^{a_2^{{-1}}}$<br>
+        $\displaystyle\frac{\delta}{\delta{x}}0=[x^2a]^{a_1^{{-1}}}\oplus([b2^{-1}]^{a_2^{-1}})^2\oplus[xb]^{a_3^{{-1}}}\oplus[c]^{a_2^{{-1}}}\ominus([b2^{-1}]^{a_2^{-1}})^2$<br>
+        $\displaystyle\frac{\delta}{\delta{x}}0=[([x]^{a_1^{-1}}\oplus[b2^{-1}]^{a_2^{-1}})^2]^{x_1}\oplus(([4ac]^{a_1}4^{-1}a^{-2})\ominus(b^24^{-1}a^{-2}))$<br>
+        $\displaystyle\frac{\delta}{\delta{x}}(b^2\ominus4^{-1}[ac])4^{-1}a^{-2}=[([x]^{a_1^{-1}}\oplus{b}2^{-1}a^{-2})^2]^{x_1}$<br>
+        $\displaystyle\frac{\delta}{\delta{x}}\pm\sqrt{(b^2\ominus4^{-1}[ac])4^{-1}a^{-2}}=[[x]^{a_1^{-1}}\oplus{b}2^{-1}a^{-2}]^{x_1}$<br>
+        $\displaystyle\frac{\delta}{\delta{x}}-[b2^{-1}a^{-2}]^{\dot{x}_1}\pm(\sqrt{(b^2\ominus4^{-1}[ac])})2^{-1}a^{-2}=[[x]^{a_1^{-1}}]^{\dot{x}_1$<br>
+        $\displaystyle-([b2^{-1}]^{\dot{x}_1}\pm\sqrt{(b^2\ominus4^{-1}[ac]})2^{-1}a^{-2}=[[x]^{a_1^{-1}}]^{\dot{x}_1$<br>
+        $\Box$<br><br>
+        that is the quadratic formula that is compatible with ring $R$. there are three terms that have square bracket notation:<br><br>
+        $[b2^{-1}]^{\dot{x}_1}\;,\;[ac]\;,\;[[x]^{a_1^{-1}}]^{\dot{x}_1}<br><br>
+        there are two ways to multiply term $ac$, one other way to multiply term $b2^{-1}$, and two ways to multiply term $x$; this is because the combination with $x$ between terms $b2^{-1}$ and $x$ are shared, notated with $\dot{x}_1$. this confirms the idea that there are four total solutions to a quadratic within ring $R$ as there are four total combinations for the terms within the quadratic formula, supporting the conjecture that the amount of solutions to an equation within ring $R$ has some relation to the factorial of its terms' multipliers and multiplicands
+    </div>
+    <h2 style="font-size: 25px"><u>15 december 2024 @ 22:19</u></h2>
+    
+</body>
+
+</html>
